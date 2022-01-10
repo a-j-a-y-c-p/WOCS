@@ -35,6 +35,17 @@
             background: #125688;
             color: white;
         }
+
+        @media (max-width: 575px) {
+            :root {
+                --size-divisor: 1.6;
+            }
+        }
+        @media (min-width: 576px) {
+            :root {
+                --size-divisor: 0.7;
+            }
+        }
     </style>
 </head>
 
@@ -87,6 +98,35 @@
                     </li>
                     <li><a class="dropdown-item" href="CS.html">Cyber Security</a></li>
                 </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Allrounders
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown"
+                        style="background-color:#0d6dfde1;width: calc(24rem / var(--size-divisor));">
+                        <div class="row">
+                            <div class="column col-12 col-md-6 col-sm-6 col-lg-6">
+                                <div class="card" style="width: 16rem;">
+                                    <img src="Images/codeWithHarry.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code With Harry</h5>
+                                        <a href="https://www.youtube.com/c/CodeWithHarry" class="btn btn-primary">Go to
+                                            channel</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-12 col-md-6 col-sm-6 col-lg-6">
+                                <div class="card" style="width: 16rem;">
+                                    <img src="Images/freeCodeCamp.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Free Code Camp</h5>
+                                        <a href="https://www.youtube.com/Freecodecamp" class="btn btn-primary">Go to
+                                            channel</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="ContactUs.html">Contact Us</a>
@@ -110,7 +150,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/Images/academics.jpg" class="d-block w-100" alt="..." height="700">
+                <img src="Images/academics.jpg" class="d-block w-100" alt="..." height="700">
                 <div class="carousel-caption d-block">
                     <h2>Academics</h2>
                     <p>You can see academics related contents in academics section.</p>
